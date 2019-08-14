@@ -34,11 +34,11 @@ $(STATIC_TARGET):$(OBJS)
 
 #generate libppaillier.so
 $(SHARE_TARGET):$(OBJS)
-	gcc -shared -fPIC -o $(SHARE_TARGET) $(SOURCE)
+	g++ -shared -fPIC -o $(SHARE_TARGET) $(SOURCE)
 
 #generate binary file (*.o)
 $(OBJS): $(wildcard *.c)
-	gcc -c $< -o $@
+	g++ -c $< -o $@
 
 
 clean:
