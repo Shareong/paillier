@@ -6,4 +6,4 @@ file(GLOB HEADERS "*.h")
 add_library(paillier ${SRC_LIST} ${HEADERS})
 
 install(TARGETS paillier RUNTIME DESTINATION bin ARCHIVE DESTINATION lib LIBRARY DESTINATION lib)
-install(FILES ${HEADERS} DESTINATION include/scrypt)
+install(FILES ${HEADERS} DESTINATION include)
